@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: #dedede;
+    margin: 2em;
+    overflow: auto;
+    text-align: center;
+}
+.container>div {
+    background-color: #fff;
+    margin: 2em;
+    display: inline-block;
+}
+.left {
+    
+	float: left;
+    padding: 1em;
+    width: 200px;
+}
+.left img {
+    float: left;
+    height: 80px;
+    width: 80px;
+}
+.left p {
+    float: right;
+}
+.container .main {
+    margin: 2em auto;
+    padding: 1em;
+    width: 50%;
+}
+.container .right {
+    float: right;
+    width: 120px;
+}
+.container .right div img {
+    height: 80px;
+    width: 80px;
+    margin: 1em 0;
+}
