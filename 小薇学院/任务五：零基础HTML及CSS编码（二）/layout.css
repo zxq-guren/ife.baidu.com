@@ -1,0 +1,200 @@
+/*清除默认样式 start*/
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Arial,"微软雅黑";
+	font-size: 12px;
+	color: black;
+}
+/*清除默认样式 end*/
+
+/*顶部导航样式 start*/
+nav {
+	position: relative;
+	/*为了定位下面导航列表的位置*/
+	width: 100%;
+	height: 60px;
+	background-color: #333;
+}
+
+#logo img {
+	display: inline-block;
+	width: 140px;
+	height: 50px;
+	margin-left: 30px;
+	margin-top: 8px;
+}
+
+.topnav-list  li {
+	float: left;
+	list-style: disc;
+	margin-left: 20px;
+}
+
+.topnav-list {
+	position: absolute;
+	top: 20px;
+	right: 16px;
+}
+
+.topnav-list li a {
+	text-decoration: none;
+	color: #ffeff4;
+	font-size: 12px;
+}
+
+.topnav-list .topnav-list4 {
+	color: #a9aeb4;
+}
+/*顶部导航样式 end*/
+
+
+/*主要内容样式 start*/
+#main {
+	overflow: auto;
+	width: 100%;
+	/*margin: 0px auto;*/
+}
+.articeldiv {
+	margin-right: 370px;
+}
+article {
+  background-color: #ffffff;
+  margin: 20px 20px;
+  padding: 20px;
+  box-shadow: 2px 2px 2px 2px #333333;
+ 
+}
+hgroup h3, hgroup span {
+  color: grey;
+  line-height:200%;
+}
+hgroup span {
+  font-size: 10px;
+}
+article p {
+  text-indent: 2em;
+}
+article ul {
+  list-style: none;
+  margin-left: 30px;
+}
+article ol {
+  margin-left: 30px;
+}
+/*图片盒子的流式布局*/
+#img {
+  display: flex;
+  flex-direction: row;
+}
+#imgbox div {
+  display: inline-block;
+  border: 1px solid #333333;
+  height: 120px;
+  margin: 10px;
+  width: 120px;
+  text-align: center;
+}
+#imgbox div img {
+  width: 80%;
+  margin: 10px auto;
+}
+.article-table {
+  border-collapse: collapse;
+  font-size: 13px;
+  text-align: left;
+  width: 100%;
+}
+.article-table, th, td{
+  padding-left: 10px;
+  border: 1px solid lightslategray;
+}
+.article-table th {
+  background: #333333;
+  color: #ffffff;
+}
+
+.article-tr {
+  background: grey;
+  color: black;
+}
+/*主要内容样式 end*/
+/*侧栏样式 start*/
+
+#sidebar {
+	float: right;
+	width: 350px;
+	margin: 20px 20px 20px 20px;
+	border: 1px solid #cdcdcd;
+}
+
+#sidebar h3 {
+	height: 38px;
+	margin: 20px;
+	padding-left: 10px;
+	border-left: 3px solid #c8c8c8;
+	line-height: 38px;
+	font-size: 15px;
+}
+
+#sidebar .sidebar-form {
+	/*margin-left: 237px;*/
+}
+
+.sidebar-form .ifoinputform {
+	margin: 6px;
+	padding: 6px;
+	font-size: 14px;
+}
+
+.infocategory-left {
+	display: inline-block;
+	width: 100px;
+	height: 14px;
+	margin-right: 14px;
+	text-align: right;
+	line-height: 14px;
+}
+.ifoinputform-tip {
+	display: inline-block;
+	color: #b7a7aa;
+}
+
+.ifoinputform textarea {
+	width: 50%;
+	height: 100px;
+	vertical-align: top;
+	font-size: 15px;
+}
+
+.submitdiv {
+	margin: 20px;
+}
+/*解决.submitbtn设置width: 100%;后再设置margin溢出的问题*/
+
+.submitbtn {
+	display: block;
+	width: 100%;
+	height: 38px;
+	border: 1px solid #c4cccf;
+	border-radius: 10px;
+	background-color: #3355d0;
+	font-size: 15px;
+	color: white;
+	font-weight: 700;
+}
+
+/*侧栏样式 end*/
+
+.footer {
+  background-color: #000000;
+  display:inline-block;
+  height: 80px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 80px;
+  width:100%
+ 
+}

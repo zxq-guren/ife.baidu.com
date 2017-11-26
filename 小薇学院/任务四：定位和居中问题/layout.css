@@ -1,0 +1,68 @@
+/*
+* {
+    margin: 0;
+    padding: 0;
+  }
+.content {
+    width: 400px;
+    height: 200px;
+    background: #ccc;
+    box-sizing: border-box;
+     
+    // 居中样式方法一
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+      
+    // 方法二
+    position: fixed;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    }
+.circle {
+    border-width: 50px;
+    border-radius: 50px;
+    border-style: solid;
+    position: absolute;
+    }
+.left {
+    left: -50px;
+    top: -50px;
+    border-color: transparent transparent transparent #fc0;
+    transform: rotate(225deg);
+    }
+.right {
+    right: -50px;
+    bottom: -50px;
+    border-color: transparent transparent transparent #fc0;
+    transform: rotate(45deg);
+    }
+*/
+.content {
+    background-color: #ccc;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    width: 400px;
+}
+.left, .right {
+    background-color: #fc0;
+    height: 50px;
+    width: 50px;
+}
+.left {
+    border-bottom-right-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.right {
+    border-top-left-radius: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
