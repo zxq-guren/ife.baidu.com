@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>任务一：表单（一）单个表单项的检验</title>
+  <style type="text/css">
+    *{
+      margin:0;
+      padding:0;
+      font-family:微软雅黑;
+    }
+    body{
+      width:500px;
+      margin:0 auto;
+    }
+    .inputadd{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+    label{
+      display:block;
+      height:36px;
+      width:36px;
+      line-height:36px;
+      text-align:center;
+      margin:20px 10px;
+    }
+    input{
+      outline:none;
+      display:block;
+      border:1px solid #DEDBDB;
+      border-radius:3px;
+      box-shadow:0px 0px 1px #DEDBDB;
+      height:36px;
+      width:310px;
+      margin:20px 10px 0px 10px;
+    }
+    button{
+      display:block;
+      margin:20px 5px;
+      width:67px;
+      border:none;
+      border-radius:3px;
+      color:#fff;
+      background-color:#16A0DF;
+      font-size:16px;
+    }
+    #tip{
+      position:relative;
+      top:-15px;
+      font-size:14px;
+	  color:#999;
+      width:310px;
+      left:-10px;
+    }
+  </style>
+
+  </head>
+<body>
+<h3>task1</h3>
+
+	<div class="inputadd">
+		<label for="name">名称</label>
+		<input type="text" id="name"required />
+		<button for="name" type="submit"onclick="check()">验证</button>
+		<div id="tip">必填，长度为4-16个字符</div>
+	</div>
+	<script type="text/javascript">
+	    function check() {
+        var get_name = document.getElementById("name");
+        var tip = document.getElementById("tip");
+        console.log(get_name.value);
+        var sum = checksum(get_name.value);
+        if(sum==0){
+            tip.innerText="该值不能为空";
+        }else if(sum>=4&&sum<=16){
+            tip.innerText="输入格式正确";
+        }else{
+            tip.innerText="请输入4-16个字符";document.getElementById("tip").style.display="color:red";
+        }
+
+    }
+    function checksum(chars)
+    {
+        var sum = 0;
+        for (var i=0; i<chars.length; i++)
+        {
+            var c = chars.charCodeAt(i);
+            if ((c >= 0x0001 && c <= 0x007e) || (0xff60<=c && c<=0xff9f))
+            {
+                sum++;
+            }
+            else
+            {
+                sum+=2;
+            }
+        }
+        return sum;
+    }
+
+	</script>
+</body>
+</html>
