@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+}
+ul, li {
+    list-style: none;
+    display: inline-block;
+}
+body nav a {
+    text-decoration: none;
+    color: #000;
+}
+/*------------------nav------------------*/
+nav {
+    height: 60px;
+    min-width: 1280px;
+    background-color: #fff;
+    font-size: 15px;
+}
+nav ul {
+    float: right;
+    margin-right: 66px;
+}
+nav ul li a {
+    display: inline-block;
+    line-height: 57px;
+    padding: 0 1em;
+}
+nav ul li a:hover {
+    border-bottom: 3px #e8504f solid;
+}
+nav span a {
+    background-image: url('images/logosmall.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    display: inline-block;
+    font-family: "黑体";
+    font-size: 22px;
+    line-height: 60px;
+    margin-left: 66px;
+    padding-left: 40px;
+}
+nav #login a {
+    background-image: url('images/icon1.png');
+    background-position: left;
+    background-size: 14px;
+    background-repeat: no-repeat;
+    color: #e8504f;
+    padding-left: 1.2em;
+}
+nav #login a:hover {
+    border-bottom: none;
+}
+/*------------------welcome------------------*/
+.container .welcome {
+    background-image: url('images/pic1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    margin: 0 auto;
+    height: 690px;
+    position: relative;
+}
+.container .welcome div{
+    position: absolute;
+    left: 100px;
+    top: 250px;
+}
+.container .welcome div h1 {
+    font-size: 60px;
+    line-height: 1.5em;
+    margin-left: -5px;
+}
+.container .welcome div p {
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 1.5em;
+}
+.container .welcome button {
+    margin: 40px 0;
+    height: 60px;
+    width: 330px;
+    background-color: #e8504f;
+    border: none;
+    font-size: 30px;
+    color: #fff;
+}
+/*------------------introduction------------------*/
+.container .introduction {
+    height: 250px;
+    min-width: 1280px;
+    /*background-color: lightslategray;*/
+    display: flex;
+    justify-content: space-around;
+    font-family: "黑体";
+    font-size: 15px;
+}
+.container .introduction i {
+    display: block;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container .introduction div p {
+    border-right: 2px solid grey;
+    padding: .5em 5em;
+    text-align: center;
+}
+.container .introduction div:last-child p {
+    border: none;
+}
+.container .introduction div:nth-child(1) i {
+    background-image: url('images/item3.png');
+}
+.container .introduction div:nth-child(2) i {
+    background-image: url('images/item2.png');
+}
+.container .introduction div:nth-child(3) i{
+    background-image: url('images/item1.png');
+}
+.container .introduction div:nth-child(4) i{
+    background-image: url('images/item4.png');
+}
+/*------------------slogan------------------*/
+.container .slogan {
+    height: 360px;
+    background-color: #ededed;
+}
+.container .slogan i {
+    display: block;
+    height: 150px;
+    background-image: url('images/header-logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container .slogan h1 {
+    color: #a0a0a0;
+    text-align: center;
+    font-size: 50px;
+    font-family: '黑体;
+}
+/*------------------city-info------------------*/
+.container .city-info {
+    color: #fff;
+    height: 340px;
+    background-image: url('images/pic2.png');
+    background-size: cover;
+    text-align: center;
+    padding: 3em 0;
+}
+.container .city-info h2 {
+    font-weight: lighter;
+    font-size: 24px;
+}
+.container .city-info hr {
+    width: 30px;
+    border: 1px #fff solid;
+    margin: .5em auto 1em auto;
+}
+.container .city-info p {
+    font-size: 14px;
+    font-weight: lighter;
+    padding-bottom: 50px;
+}
+.container .city-info select, .container .city-info button {
+    width: 240px;
+    height: 36px;
+    border: none;
+    margin: 0 12px;
+    padding: 0 10px;
+}
+.container .city-info select {
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    /*清除默认的下拉箭头，很少用到的属性*/
+    background-image: url('images/downarrow.png');
+    background-position-x: 220px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-color: #e3e3e5;
+}
+.container .city-info select:hover {
+    border: 1px solid #e8504f;
+}
+.container .city-info select option {
+    background-color: #e3e3e5;
+}
+.container .city-info .country div {
+    float: right;
+    width: 10px;
+    height: 10px;
+    background-color: #e8504f;
+}
+.container .city-info button {
+    background-color: #e8504f;
+    color: #fff;
+}
+/*------------------activity-------------------*/
+.container .activity {
+    height: 600px;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 100px;
+    text-align: center;
+}
+.container .activity .img-box div {
+    padding: 10px 8px;
+    border: 1px #dadada solid;
+}
+.container .activity h4 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+.container .activity h3 {
+    font-size: 22px;
+    margin: 5px 0;
+}
+.container .activity p {
+    font-size: 12px;
+    color: grey;
+}
+/*------------------more-info-------------------*/
+.container .more-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 1280px;
+}
+.container .more-info div {
+    height: 560px;
+    width: 33.3%;
+    margin: 0;
+    text-align: center;
+}
+.container .more-info div button {
+    border: 1px solid #e8504f;
+    /*设置了一个透明的按钮背景*/
+    background-color: rgba(0, 0, 0, 0);
+    height: 2em;
+    width: 8em;
+    font-size: 20px;
+    font-family: "黑体";
+    color: #e8504f;
+}
+.container .more-info .touch-more {
+    padding: 180px 80px 0 80px;
+}
+.container .more-info div:first-child {
+    background-image: url('images/pic4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    width: 66.6%;
+    position: relative;
+    padding-top: 30px;
+}
+.container .more-info div:first-child img {
+    position: absolute;
+    top: 275px;
+    right: -1px;
+}
+.container .more-info div:first-child h2 {
+    margin-top: 100px;
+    font-size: 50px;
+}
+.container .more-info div:first-child h1 {
+    font-size: 150px;
+}
+.container .more-info div:first-child p {
+    font-size: 20px;
+}
+.container .more-info div:nth-child(3) {
+    background-color: #e8504f;
+    color: #fff;
+}
+.container .more-info div:last-child {
+    background-image: url('images/pic5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.container .more-info div:last-child img {
+    position: absolute;
+    left: -1px;
+    top: 275px;
+}
+.container .more-info hr {
+    border: 1px #fff solid;
+    width: 2em;
+    margin: 20px auto;
+}
+.container .more-info h2 {
+    font-size: 22px;
+}
+/*----个性修改----*/
+.container .more-info div:nth-child(4) hr {
+    border: 1px grey solid;
+}
+.container .more-info div:nth-child(2) button {
+    font-size: 14px;
+    margin: 20px 0;
+}
+.container .more-info div:nth-child(2) p {
+    font-size: 14px;
+    font-family: "仿宋";
+    line-height: 2.5em;
+    text-align: left;
+}
+.container .more-info div:nth-child(2) span {
+    color: #e8504f
+}
+.container .more-info div:nth-child(3) button {
+    color: #fff;
+    border: 1px #fff solid;
+}
+/*------------------volunteer-------------------*/
+.container .volunteer {
+    min-width: 1280px;
+    height: 750px;
+    padding: 120px;
+    text-align: center;
+}
+.container .volunteer h2 {
+    font-family: "黑体";
+    font-size: 26px;
+}
+ .container .volunteer h3 {
+     font-family: "黑体";
+     font-size: 18px;
+     margin: 1em 0;
+}
+.container hr {
+    border: 1px solid #e8504f;
+    width: 2em;
+    margin: .5em auto;
+}
+.container p {
+    color: #a0a0a0;
+    font-size: 14px;
+}
+.container .box {
+    margin-top: 100px;
+}
+.container .box div {
+    display: inline-block;
+}
+.container .box div:first-child {
+    width: 35%;
+    float: left;
+    text-align: left;
+}
+.container .box div details {
+    text-align: right;
+    font-size: 12px;
+    color: #a0a0a0;
+}
+.container .box div:last-child {
+    width: 55%;
+    float: right;
+}
+.container form {
+    text-align: center;
+}
+.container .box input, .container .box textarea, .container .box button {
+    color: #000;
+    font-size: 14px;
+    font-family: "仿宋";
+    background-color: #ededef;
+    margin: 1%;
+    padding: .8em 1em;
+    border: none;
+    width: 44%;
+}
+.container .box textarea {
+    width: 91%;
+    height: 8em;
+    resize: none;
+}
+.container .box button {
+    width: 91%;
+    display: block;
+    margin: 1% auto;
+    font-family: "黑体";
+    font-size: 16px;
+}
+/*------------------contact-------------------*/
+.container .contact {
+    color: #fff;
+    height: 360px;
+    background-color: #33363f;
+    text-align: center;
+    padding: 100px;
+}
+.container .contact h2 {
+    font-size: 20px;
+    font-family: "黑体";
+    margin-bottom: .5em;
+}
+.container .contact p {
+    color: #fff;
+    font-size: 14px;
+    font-family: "仿宋";
+    line-height: 1.5em;
+}
+.container .contact form {
+    margin: 30px;
+    padding: 20px auto;
+}
+.container .contact form input {
+    width: 25em;
+    font-size: 16px;
+    padding: .5em;
+    border: none;
+    height: 2.5em;
+}
+.container .contact input[type="submit"] {
+    width: 6em;
+    border: none;
+    color: #fff;
+    font-family: "黑体";
+    background-color: #6f6f77;
+    margin-left: -5px;
+}
+.container .contact ul a {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-image: url('images/qq.png');
+    background-repeat: no-repeat;
+    margin: 5px 10px;
+}
+.container .contact ul li:nth-child(2) a {
+    background-image: url('images/weibo.png');
+}
+.container .contact ul li:nth-child(3) a {
+    background-image: url('images/twitter.png');
+}
+.container .contact ul li:nth-child(4) a {
+    background-image: url('images/w3c.png');
+}
+/*------------------footer-------------------*/
+footer {
+    height: 60px;
+    background-color: #30303a;
+    line-height: 60px;
+    color: #fff;
+    font-size: 12px;
+}
+footer p {
+    float: left;
+    margin-left: 5em;
+}
+footer span{
+    float: right;
+    margin-right: 5em;
+}
+footer span a {
+    text-decoration: none;
+    color: #fff;
+}
